@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main() {
+    cout<<"sayi daxil edin";
+    int n;
+    cin>>n;
+    vector<int>A(n);
+    int max=0;
+    for(int i=0;i<n;i++){
+        cin>>A[i];
+        if (A[i]>A[max]) 
+          max=1;
+    }
+    
+    swap(A[max],A[n-1]);
+    for(int m=0;m<n;m++){
+        cout<<A[m];
+    }
+    
+
+    
+}
